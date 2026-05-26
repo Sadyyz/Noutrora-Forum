@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOUTRORA FORUM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand-mark">
+                <span class="brand-icon">✦</span>
+                <span>NOUTRORA FORUM</span>
+            </div>
+            <nav class="topbar-links">
+                <a href="#lore">Lenda</a>
+                <a href="#comunidade">Comunidade</a>
+                <a href="#campos">Camadas</a>
+            </nav>
+        </header>
+
+        <main class="hero-grid">
+            <section class="hero-copy">
+                <p class="eyebrow">Dark fantasy • RPG de mistério e poder</p>
+                <h1>Em NOUTRORA, o destino de cada alma é marcado pela escuridão.</h1>
+                <p class="lead">
+                    Explore histórias sombrias, assemble sua guilda e compartilhe os segredos de um mundo onde covens, sombras e antigas promessas rondam cada esquina.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="{{ url_for('login') }}" class="btn btn-primary">Entrar no Fórum</a>
+                    <a href="#lore" class="btn btn-secondary">Conhecer a lenda</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>12+</strong>
+                        <span>Linhas de história em criação</span>
+                    </div>
+                    <div>
+                        <strong>∞</strong>
+                        <span>Combates e mistérios a desvendar</span>
+                    </div>
+                    <div>
+                        <strong>24h</strong>
+                        <span>Memórias do reino em constante fluxo</span>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="hero-panel">
+                <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Emblema do NOUTRORA FORUM">
+                <div class="hero-panel-copy">
+                    <p class="panel-title">Portal da guilda</p>
+                    <h2>Junte-se ao conselho das sombras.</h2>
+                    <p>
+                        Cadastre-se no fórum para trocar missões, narrar aventuras e defender o reino contra o silêncio.
+                    </p>
+                </div>
+            </aside>
+        </main>
+
+        <section class="content-grid" id="lore">
+            <article class="info-card">
+                <p class="card-tag">Sombra</p>
+                <h3>O Reino das Cinzas</h3>
+                <p>
+                    Marés negras engoliram a capital e restaram apenas ruínas, relíquias e a memória de reis que ainda despertam nos sonhos dos vivos.
+                </p>
+            </article>
+
+            <article class="info-card" id="comunidade">
+                <p class="card-tag">Guilda</p>
+                <h3>Rituais e encontros</h3>
+                <p>
+                    Participe de debates, publique suas jornadas e encontre companheiros para atravessar os territórios proibidos do forum.
+                </p>
+            </article>
+
+            <article class="info-card" id="campos">
+                <p class="card-tag">Mistério</p>
+                <h3>Camadas do desconhecido</h3>
+                <p>
+                    Cada tópico revela uma nova camada do mundo: feitiços, criaturas, heranças, traidores e o verdadeiro nome da escuridão.
+                </p>
+            </article>
+        </section>
+
+        <section class="story-banner">
+            <div>
+                <p class="eyebrow">A lenda do começo</p>
+                <h2>“Quando o último sol se apagou, os que permaneceram aprenderam a ouvir a noite.”</h2>
+            </div>
+            <img src="{{ url_for('static', filename='img/story.jpg') }}" alt="Ilustração sombria para a história do NOUTRORA">
+        </section>
+    </div>
+</body>
+</html>

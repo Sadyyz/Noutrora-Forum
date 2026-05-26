@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOUTRORA FORUM • Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="login-page">
+    <div class="login-shell">
+        <section class="login-visual">
+            <p class="eyebrow">Portal da guilda</p>
+            <h1>Crie sua identidade no reino.</h1>
+            <p>
+                Esta é uma tela de registro apenas para estudo de interface. Nenhum cadastro real, API ou banco de dados está sendo usado aqui.
+            </p>
+            <div class="login-badge">
+                <span>✦</span>
+                <div>
+                    <strong>NOUTRORA FORUM</strong>
+                    <small>Dark fantasy • UI apenas</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-card">
+            <p class="card-tag">Registro</p>
+            <h2>Crie sua conta</h2>
+            <p class="login-copy">
+                Monte seu perfil visualmente e explore o layout de cadastro sem nenhuma funcionalidade conectada.
+            </p>
+
+            <form class="login-form" onsubmit="return false;">
+                <label>
+                    Nome
+                    <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="name">
+                </label>
+
+                <label>
+                    E-mail
+                    <input type="email" name="email" placeholder="Digite seu e-mail" autocomplete="email">
+                </label>
+
+                <label>
+                    Usuário
+                    <input type="text" name="usuario" placeholder="Crie um usuário" autocomplete="username">
+                </label>
+
+                <label>
+                    Senha
+                    <input type="password" name="senha" placeholder="Crie uma senha" autocomplete="new-password">
+                </label>
+
+                <label>
+                    Confirmar senha
+                    <input type="password" name="confirmar_senha" placeholder="Repita sua senha" autocomplete="new-password">
+                </label>
+
+                <button type="button" class="btn btn-primary">Criar conta</button>
+                <a href="{{ url_for('login') }}" class="btn btn-secondary">Voltar ao login</a>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
