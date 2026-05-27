@@ -34,16 +34,16 @@
             <form class="login-form" onsubmit="return false;">
                 <label>
                     Usuário
-                    <input type="text" name="usuario" placeholder="Digite seu usuário" autocomplete="username">
+                    <input type="text" name="username" placeholder="Digite seu usuário" autocomplete="username">
                 </label>
 
                 <label>
                     Senha
-                    <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password">
+                    <input type="password" name="password" placeholder="Digite sua senha" autocomplete="current-password">
                 </label>
 
                 <button type="button" class="btn btn-primary">Entrar</button>
-                <a href="{{ url_for('home') }}" class="btn btn-secondary">Voltar à home</a>
+                <a href="{{ url_for('homepage') }}" class="btn btn-secondary">Voltar à home</a>
             </form>
         </section>
     </div>
